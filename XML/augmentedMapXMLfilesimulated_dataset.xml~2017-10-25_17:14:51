@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<semantic_map>
+    <!--Semantic map saved XML file. Coords are already image coordinates.-->
+    <areas />
+    <imposed_areas>
+        <tag name="kitchen" x="51" y="55" />
+        <tag name="kitchen" x="52" y="51" />
+        <tag name="kitchen" x="52" y="54" />
+        <tag name="kitchen" x="52" y="52" />
+        <tag name="kitchen" x="52" y="53" />
+    </imposed_areas>
+    <objects>
+        <object name="\couch~2017-10-25_17:07:31" x="544" y="468" theta="0" dimX="36" dimY="18.2" dimZ="12.1" type="1" properties="name:\couch~2017-10-25_17:07:31~objectAngle~0~color:red" />
+        <object name="\bookcase~2017-10-25_17:07:31" x="538" y="516" theta="0" dimX="7.80001" dimY="29.8" dimZ="15.9" type="1" properties="name:\bookcase~2017-10-25_17:07:31~objectAngle~0~color:red" />
+        <object name="\chair_ikea_borje~2017-10-25_17:14:40" x="505" y="453" theta="0" dimX="7.2" dimY="9.91302" dimZ="19.9022" type="1" properties="name:\chair_ikea_borje~2017-10-25_17:14:40~objectAngle~0~color:red" />
+        <object name="\basmati_rice~2017-10-25_17:14:40" x="521" y="461" theta="0" dimX="0.58504" dimY="2.43071" dimZ="3.39102" type="1" properties="name:\basmati_rice~2017-10-25_17:14:40~objectAngle~0~color:red" />
+        <object name="\orange_juice_hohesc~2017-10-25_17:14:40" x="508" y="463" theta="1.5708" dimX="1.40504" dimY="1.89071" dimZ="4.59102" type="1" properties="name:\orange_juice_hohesc~2017-10-25_17:14:40~objectAngle~1.5708~color:red" />
+        <object name="\table_ikea_bjursta~2017-10-25_17:14:40" x="512" y="462" theta="1.5708" dimX="18" dimY="18" dimZ="14.4" type="1" properties="name:\table_ikea_bjursta~2017-10-25_17:14:40~objectAngle~1.5708~color:red" />
+        <object name="\bookcase~2017-10-25_17:14:40" x="556" y="440" theta="0" dimX="7.80001" dimY="29.8" dimZ="15.9" type="1" properties="name:\bookcase~2017-10-25_17:14:40~objectAngle~0~color:red" />
+        <object name="\green_tea~2017-10-25_17:14:40" x="511" y="461" theta="1.5708" dimX="1.14504" dimY="1.81071" dimZ="3.89102" type="1" properties="name:\green_tea~2017-10-25_17:14:40~objectAngle~1.5708~color:red" />
+        <object name="\chair_ikea_borje2~2017-10-25_17:14:40" x="519" y="472" theta="0" dimX="7.2" dimY="9.91302" dimZ="19.9022" type="1" properties="name:\chair_ikea_borje2~2017-10-25_17:14:40~objectAngle~0~color:red" />
+        <object name="\plant_pot_white~2017-10-25_17:14:40" x="556" y="440" theta="0" dimX="2.29789" dimY="4.7496" dimZ="4.67853" type="1" properties="name:\plant_pot_white~2017-10-25_17:14:40~objectAngle~0~color:red" />
+        <object name="\chair_ikea_borje~2017-10-25_17:14:51" x="499" y="439" theta="1.5708" dimX="7.2" dimY="9.91302" dimZ="19.9022" type="1" properties="name:\chair_ikea_borje~2017-10-25_17:14:51~objectAngle~1.5708~color:red" />
+        <object name="\basmati_rice~2017-10-25_17:14:51" x="517" y="440" theta="0" dimX="0.58504" dimY="2.43071" dimZ="3.39102" type="1" properties="name:\basmati_rice~2017-10-25_17:14:51~objectAngle~0~color:red" />
+        <object name="\orange_juice_hohesc~2017-10-25_17:14:51" x="506" y="447" theta="0" dimX="1.40504" dimY="1.89071" dimZ="4.59102" type="1" properties="name:\orange_juice_hohesc~2017-10-25_17:14:51~objectAngle~0~color:red" />
+    </objects>
+</semantic_map>

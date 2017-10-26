@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+<semantic_map>
+    <!--Semantic map saved XML file. Coords are already image coordinates.-->
+    <areas />
+    <imposed_areas>
+        <tag name="kitchen" x="51" y="52" />
+        <tag name="kitchen" x="51" y="54" />
+        <tag name="kitchen" x="51" y="53" />
+        <tag name="kitchen" x="51" y="55" />
+    </imposed_areas>
+    <objects>
+        <object name="\couch~2017-10-26_15:27:57" x="542" y="445" theta="0" dimX="36" dimY="18.2" dimZ="12.1" type="1" properties="name:\couch~2017-10-26_15:27:57~objectAngle~0~name:\couch~2017-10-26_15:27:57~objectAngle~0~name:\couch~2017-10-26_15:27:57~objectAngle~0~color:yellow" />
+        <object name="\couch~2017-10-26_15:28:06" x="542" y="445" theta="0" dimX="36" dimY="18.2" dimZ="12.1" type="1" properties="name:\couch~2017-10-26_15:28:06~objectAngle~0~name:\couch~2017-10-26_15:28:06~objectAngle~0~name:\couch~2017-10-26_15:28:06~objectAngle~0~color:yellow" />
+        <object name="\couch~2017-10-26_15:29:45" x="542" y="445" theta="0" dimX="36" dimY="18.2" dimZ="12.1" type="1" properties="name:\couch~2017-10-26_15:29:45~objectAngle~0~name:\couch~2017-10-26_15:29:45~objectAngle~0~color:yellow" />
+        <object name="\couch~2017-10-26_15:29:51" x="542" y="445" theta="0" dimX="36" dimY="18.2" dimZ="12.1" type="1" properties="name:\couch~2017-10-26_15:29:51~objectAngle~0~name:\couch~2017-10-26_15:29:51~objectAngle~0~color:yellow" />
+        <object name="\couch~2017-10-26_15:38:06" x="542" y="444" theta="0" dimX="36" dimY="18.2" dimZ="12.1" type="1" properties="name:\couch~2017-10-26_15:38:06~objectAngle~0~color:yellow" />
+        <object name="\couch~2017-10-26_15:38:13" x="542" y="444" theta="0" dimX="36" dimY="18.2" dimZ="12.1" type="1" properties="name:\couch~2017-10-26_15:38:13~objectAngle~0~color:yellow" />
+        <object name="\couch~2017-10-26_15:38:14" x="541" y="444" theta="0" dimX="36" dimY="18.2" dimZ="12.1" type="1" properties="name:\couch~2017-10-26_15:38:14~objectAngle~0~color:yellow" />
+        <object name="\couch~2017-10-26_15:38:15" x="541" y="444" theta="0" dimX="36" dimY="18.2" dimZ="12.1" type="1" properties="name:\couch~2017-10-26_15:38:15~objectAngle~0~color:yellow" />
+        <object name="\couch~2017-10-26_15:38:16" x="541" y="444" theta="0" dimX="36" dimY="18.2" dimZ="12.1" type="1" properties="name:\couch~2017-10-26_15:38:16~objectAngle~0~color:yellow" />
+        <object name="\chair~2017-10-26_15:38:26" x="542" y="449" theta="0" dimX="36" dimY="18.2" dimZ="12.1" type="1" properties="name:\chair~2017-10-26_15:38:26~objectAngle~0~color:yellow" />
+        <object name="\couch~2017-10-26_15:38:26" x="498" y="487" theta="1.5708" dimX="18" dimY="18" dimZ="14.4" type="1" properties="name:\couch~2017-10-26_15:38:26~objectAngle~1.5708~color:red" />
+        <object name="\table~2017-10-26_15:38:27" x="546" y="498" theta="0" dimX="7.80001" dimY="29.8" dimZ="15.9" type="1" properties="name:\table~2017-10-26_15:38:27~objectAngle~0~color:green" />
+        <object name="\bookcase~2017-10-26_15:38:27" x="546" y="498" theta="3.14159" dimX="2.29789" dimY="4.7496" dimZ="4.67853" type="1" properties="name:\bookcase~2017-10-26_15:38:27~objectAngle~3.14159~color:magenta" />
+        <object name="\plant~2017-10-26_15:38:51" x="499" y="475" theta="0" dimX="7.2" dimY="9.91302" dimZ="19.9022" type="1" properties="name:\plant~2017-10-26_15:38:51~objectAngle~0~color:blue" />
+        <object name="\chair~2017-10-26_15:38:51" x="547" y="496" theta="0" dimX="7.80001" dimY="29.8" dimZ="15.9" type="1" properties="name:\chair~2017-10-26_15:38:51~objectAngle~0~color:green" />
+        <object name="\bookcase~2017-10-26_15:38:52" x="547" y="496" theta="3.14159" dimX="2.29789" dimY="4.7496" dimZ="4.67853" type="1" properties="name:\bookcase~2017-10-26_15:38:52~objectAngle~3.14159~color:magenta" />
+    </objects>
+</semantic_map>

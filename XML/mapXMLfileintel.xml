@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<semantic_map>
+    <!--Semantic map saved XML file. Coords are already image coordinates.-->
+    <areas>
+       	<tag name="A" x="29" y="156" />
+	<tag name="B" x="29" y="267" />
+	<tag name="C" x="29" y="322" />
+	<tag name="E" x="29" y="402" />
+	<tag name="D" x="100" y="458" />
+	<tag name="F" x="220" y="548" />
+	<tag name="G" x="310" y="550" />
+	<tag name="H" x="420" y="554" />
+	<tag name="I" x="70" y="50" />
+	<tag name="J" x="187" y="52" />
+	<tag name="J" x="512" y="512" />
+	<tag name="J" x="525" y="400" />
+    </areas>
+    <objects>
+<!--        <object name="" x="59" y="156" theta="0" dimX="20" dimY="20" dimZ="20" type="0" properties="" />-->
+<!--        <object name="" x="59" y="279" theta="0" dimX="20" dimY="20" dimZ="20" type="0" properties="" />-->
+<!--        <object name="" x="76" y="305" theta="0" dimX="20" dimY="20" dimZ="20" type="0" properties="" />-->
+<!--        <object name="" x="72" y="419" theta="0" dimX="20" dimY="20" dimZ="20" type="0" properties="" />-->
+<!--        <object name="" x="157" y="508" theta="90" dimX="20" dimY="20" dimZ="20" type="0" properties="" />-->
+<!--        <object name="" x="271" y="509" theta="90" dimX="20" dimY="20" dimZ="20" type="0" properties="" />-->
+<!--        <object name="" x="305" y="520" theta="90" dimX="100" dimY="20" dimZ="20" type="0" properties="" />-->
+<!--        <object name="" x="420" y="525" theta="90" dimX="50" dimY="20" dimZ="20" type="0" properties="" />-->
+<!--        <object name="" x="482" y="516" theta="0" dimX="20" dimY="20" dimZ="20" type="0" properties="" />-->
+<!--        <object name="" x="482" y="395" theta="0" dimX="20" dimY="20" dimZ="20" type="0" properties="" />-->
+<!--        <object name="" x="70" y="92" theta="90" dimX="50" dimY="20" dimZ="20" type="0" properties="" />-->
+<!--        <object name="" x="190" y="95" theta="90" dimX="20" dimY="20" dimZ="20" type="0" properties="" />-->
+    </objects>
+</semantic_map>

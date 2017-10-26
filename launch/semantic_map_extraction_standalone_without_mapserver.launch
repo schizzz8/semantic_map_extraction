@@ -1,0 +1,9 @@
+<launch>
+	<node name="semantic_map_extraction" pkg="semantic_map_extraction" type="semantic_map_extraction" args="1 $(find semantic_map_extraction)/maps/$(env MAPNAME).png" output="screen">
+		<param name="save_path" type="string" value="$(find semantic_map_extraction)/sem_maps" />
+		<param name="statXMLFilePath" type="string" value="$(find semantic_map_extraction)/XML/mapXMLfile$(env MAPNAME).xml" />
+		<param name="dinXMLFilePath" type="string" value="$(find semantic_map_extraction)/XML/augmentedMapXMLfile$(env MAPNAME).xml" />
+		<param name="add_objects_timeout" type="int" value="30" />
+		<param name="wait_prolog_service" type="bool" value="false" />
+	</node>
+</launch>

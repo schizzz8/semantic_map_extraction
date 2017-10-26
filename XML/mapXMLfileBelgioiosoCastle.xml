@@ -1,0 +1,44 @@
+<?xml version="1.0" ?>
+<semantic_map>
+    <!--Semantic map saved XML file. Coords are already image coordinates.-->
+    <areas>
+       	<tag name="A" x="83" y="289" />
+	<tag name="B" x="243" y="317" />
+	<tag name="C" x="378" y="324" />
+	<tag name="D" x="596" y="309" />
+	<tag name="E" x="789" y="300" />
+	<tag name="F" x="1048" y="306" />
+	<tag name="G" x="1367" y="308" />
+	<tag name="H" x="1533" y="326" />
+	<tag name="I" x="1668" y="337" />
+	<tag name="J" x="1788" y="297" />
+	<tag name="K" x="1774" y="160" />
+	<tag name="L" x="1283" y="201" />
+	<tag name="M" x="796" y="161" />
+	<tag name="N" x="594" y="150" />
+	<tag name="O" x="413" y="164" />
+	<tag name="P" x="292" y="156" />
+	<tag name="Q" x="195" y="161" />
+    </areas>
+    <objects>
+        <object name="" x="164" y="346" theta="0" dimX="30" dimY="30" dimZ="30" type="0" properties="" />
+        <object name="" x="299" y="347" theta="0" dimX="30" dimY="30" dimZ="30" type="0" properties="" />
+        <object name="" x="457" y="349" theta="0" dimX="30" dimY="30" dimZ="30" type="0" properties="" />
+        <object name="" x="718" y="352" theta="0" dimX="30" dimY="30" dimZ="30" type="0" properties="" />
+        <object name="" x="877" y="353" theta="0" dimX="30" dimY="30" dimZ="30" type="0" properties="" />
+        <object name="" x="1291" y="354" theta="0" dimX="30" dimY="30" dimZ="30" type="0" properties="" />
+        <object name="" x="1446" y="355" theta="0" dimX="30" dimY="30" dimZ="30" type="0" properties="" />
+        <object name="" x="1606" y="359" theta="0" dimX="30" dimY="30" dimZ="30" type="0" properties="" />
+        <object name="" x="1725" y="354" theta="0" dimX="30" dimY="30" dimZ="30" type="0" properties="" />
+        <object name="" x="1809" y="223" theta="1.5708" dimX="30" dimY="30" dimZ="30" type="0" properties="" />
+        <object name="" x="1722" y="201" theta="0" dimX="30" dimY="30" dimZ="30" type="0" properties="" />
+        <object name="" x="1406" y="222" theta="1.5708" dimX="30" dimY="30" dimZ="30" type="0" properties="" />
+        <object name="" x="878" y="192" theta="0" dimX="30" dimY="30" dimZ="30" type="0" properties="" />
+        <object name="" x="807" y="220" theta="1.5708" dimX="30" dimY="30" dimZ="30" type="0" properties="" />
+        <object name="" x="735" y="137" theta="0" dimX="30" dimY="30" dimZ="30" type="0" properties="" />
+        <object name="" x="464" y="137" theta="0" dimX="30" dimY="30" dimZ="30" type="0" properties="" />
+        <object name="" x="354" y="137" theta="0" dimX="30" dimY="30" dimZ="30" type="0" properties="" />
+        <object name="" x="227" y="137" theta="0" dimX="30" dimY="30" dimZ="30" type="0" properties="" />
+        <object name="" x="190" y="227" theta="1.5708" dimX="30" dimY="30" dimZ="30" type="0" properties="" />
+    </objects>
+</semantic_map>

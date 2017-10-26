@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<semantic_map>
+    <!--Semantic map saved XML file. Coords are already image coordinates.-->
+    <areas />
+    <imposed_areas />
+    <objects>
+        <object name="\chair~2017-10-26_11:19:04" x="499" y="475" theta="0" dimX="7.2" dimY="9.91302" dimZ="19.9022" type="1" properties="name:\chair~2017-10-26_11:19:04~objectAngle~0~color:blue" />
+        <object name="\basmati~2017-10-26_11:19:05" x="507" y="491" theta="0" dimX="0.58504" dimY="2.43071" dimZ="3.39102" type="1" properties="name:\basmati~2017-10-26_11:19:05~objectAngle~0~color:black" />
+        <object name="\orange~2017-10-26_11:19:05" x="495" y="485" theta="3.14159" dimX="1.40504" dimY="1.89071" dimZ="4.59102" type="1" properties="name:\orange~2017-10-26_11:19:05~objectAngle~3.14159~color:black" />
+        <object name="\table~2017-10-26_11:19:05" x="499" y="487" theta="1.5708" dimX="18" dimY="18" dimZ="14.4" type="1" properties="name:\table~2017-10-26_11:19:05~objectAngle~1.5708~color:red" />
+        <object name="\bookcase~2017-10-26_11:19:05" x="548" y="495" theta="0" dimX="7.8" dimY="29.8" dimZ="15.9" type="1" properties="name:\bookcase~2017-10-26_11:19:05~objectAngle~0~color:green" />
+        <object name="\green~2017-10-26_11:19:05" x="499" y="485" theta="3.14159" dimX="1.14504" dimY="1.81071" dimZ="3.89102" type="1" properties="name:\green~2017-10-26_11:19:05~objectAngle~3.14159~color:black" />
+        <object name="\chair~2017-10-26_11:19:05" x="548" y="495" theta="3.14159" dimX="2.29789" dimY="4.7496" dimZ="4.67853" type="1" properties="name:\chair~2017-10-26_11:19:05~objectAngle~3.14159~color:magenta" />
+    </objects>
+</semantic_map>

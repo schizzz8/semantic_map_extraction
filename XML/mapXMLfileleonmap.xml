@@ -1,0 +1,42 @@
+<?xml version="1.0" ?>
+<semantic_map>
+  <!--Semantic map saved XML file. Coords are already image coordinates.-->
+  <areas>
+	  <tag name="livingroom" x="214" y="460" />
+	  <tag name="corridor" x="266" y="511" />
+	  <tag name="toilette" x="275" y="453" />
+	  <tag name="kitchen" x="267" y="410" />
+	  <tag name="bedroom" x="330" y="450" />
+	  <tag name="hall" x="201" y="411" />
+	  <tag name="outside" x="269" y="290" />
+  </areas>
+  <objects>
+    <object name="bedroom1door" x="303" y="513" theta="0" dimX="20" dimY="15" dimZ="20" type="0" properties="open" />
+    <object name="bedroom2door" x="303" y="408" theta="0" dimX="20" dimY="20" dimZ="20" type="0" properties="open" />
+    <object name="toilettedoor" x="279" y="493" theta="90" dimX="20" dimY="20" dimZ="20" type="0" properties="open" />
+    <object name="removablewall" x="206" y="433" theta="90" dimX="20" dimY="20" dimZ="20" type="0" properties="closed" />
+    
+    <object name="sofa" x="269" y="290" theta="0" dimX="20" dimY="70" dimZ="45" type="1" properties="" />
+    <object name="television" x="269" y="290" theta="90" dimX="10" dimY="10" dimZ="10" type="1" properties="" />
+    <object name="kitchentable" x="269" y="290" theta="90" dimX="35" dimY="10" dimZ="15" type="1" properties="" />
+    <object name="kitchenshelf" x="269" y="290" theta="90" dimX="35" dimY="10" dimZ="15" type="1" properties="" />
+    <object name="coffeetable" x="269" y="290" theta="90" dimX="10" dimY="10" dimZ="10" type="1" properties="" />
+    <object name="bed" x="269" y="290" theta="90" dimX="20" dimY="10" dimZ="25" type="1" properties="" />
+    <object name="fridge" x="269" y="290" theta="90" dimX="10" dimY="10" dimZ="10" type="1" properties="" />
+    <object name="nightstand" x="269" y="290" theta="90" dimX="2" dimY="2" dimZ="2" type="1" properties="" />
+    <object name="lamp" x="269" y="290" theta="90" dimX="5" dimY="5" dimZ="5" type="1" properties="" />
+    <object name="chair" x="269" y="290" theta="90" dimX="5" dimY="5" dimZ="5" type="1" properties="" />
+    <object name="armchair" x="269" y="274" theta="90" dimX="5" dimY="5" dimZ="5" type="1" properties="" />
+    
+    <object name="fork" x="269" y="290" theta="90" dimX="2" dimY="2" dimZ="2" type="1" properties="color:gray" />
+    <object name="beercan" x="269" y="290" theta="90" dimX="5" dimY="5" dimZ="5" type="1" properties="color:red" />
+    <object name="cookiecan" x="269" y="290" theta="90" dimX="2" dimY="2" dimZ="2" type="1" properties="color:white" />
+    <object name="softdrinkcan" x="269" y="290" theta="90" dimX="2" dimY="2" dimZ="2" type="1" properties="color:yellow" />
+    <object name="coffeemate" x="269" y="290" theta="90" dimX="2" dimY="2" dimZ="2" type="1" properties="color:blue" />
+    <object name="scissors" x="269" y="290" theta="90" dimX="2" dimY="2" dimZ="2" type="1" properties="color:orange" />
+    <object name="magazine" x="269" y="290" theta="90" dimX="2" dimY="2" dimZ="2" type="1" properties="color:white" />
+    <object name="gazpachobrick" x="269" y="290" theta="90" dimX="2" dimY="2" dimZ="2" type="1" properties="color:orange" />
+    <object name="coffeecapsule" x="269" y="290" theta="90" dimX="2" dimY="2" dimZ="2" type="1" properties="color:brown" />
+    <object name="wine" x="269" y="290" theta="90" dimX="2" dimY="2" dimZ="2" type="1" properties="color:blue" />
+  </objects>
+</semantic_map>

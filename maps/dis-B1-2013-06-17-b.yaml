@@ -1,0 +1,6 @@
+image: dis-B1-2013-06-17-c.png
+resolution: 0.05
+origin: [-4.9134, -10.0686, .0]
+negate: 0
+occupied_thresh: 0.65
+free_thresh: 0.2

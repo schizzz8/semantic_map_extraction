@@ -1,0 +1,21 @@
+<launch>
+    <arg name="map_name" default="simulated_dataset"/>
+
+    <node name="semantic_map_extraction" pkg="semantic_map_extraction" type="semantic_map_extraction_node" args="0" output="screen">
+        <param name="save_path" type="string" value="$(find semantic_map_extraction)/sem_maps" />
+        <param name="statXMLFilePath" type="string" value="$(find semantic_map_extraction)/XML/mapXMLfile$(arg map_name).xml" />
+        <param name="dynXMLFilePath" type="string" value="$(find semantic_map_extraction)/XML/augmentedMapXMLfile$(arg map_name).xml" />
+        <param name="add_objects_timeout" type="int" value="30" />
+        <param name="wait_prolog_service" type="bool" value="false" />
+        <param name="load_dynamic_map" type="bool" value="true" />
+        <param name="robot_name" type="string" value="" />
+        <param name="base_frame_id" type="string" value="base_link" />
+    </node>
+
+    <node name="create_kb" pkg="semantic_map_extraction" type="create_kb.py" args="0" output="screen">
+        <param name="save_path" type="string" value="$(find semantic_map_extraction)/SPQReL.txt" />
+    </node>
+
+    <!-- <node name="message_forward" pkg="semantic_map_extraction" type="message_forward.py" args="0" output="screen" /> -->
+
+</launch>

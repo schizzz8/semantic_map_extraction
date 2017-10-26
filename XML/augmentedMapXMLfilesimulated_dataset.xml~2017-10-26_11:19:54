@@ -1,0 +1,45 @@
+<?xml version="1.0" ?>
+<semantic_map>
+    <!--Semantic map saved XML file. Coords are already image coordinates.-->
+    <areas />
+    <imposed_areas>
+        <tag name="kitchen" x="51" y="52" />
+        <tag name="kitchen" x="51" y="54" />
+        <tag name="kitchen" x="40" y="57" />
+        <tag name="kitchen" x="40" y="58" />
+        <tag name="kitchen" x="41" y="57" />
+        <tag name="kitchen" x="41" y="58" />
+        <tag name="kitchen" x="41" y="56" />
+        <tag name="kitchen" x="41" y="54" />
+    </imposed_areas>
+    <objects>
+        <object name="\chair~2017-10-26_11:19:04" x="499" y="475" theta="0" dimX="7.2" dimY="9.91302" dimZ="19.9022" type="1" properties="name:\chair~2017-10-26_11:19:04~objectAngle~0~color:blue" />
+        <object name="\basmati~2017-10-26_11:19:05" x="507" y="491" theta="0" dimX="0.58504" dimY="2.43071" dimZ="3.39102" type="1" properties="name:\basmati~2017-10-26_11:19:05~objectAngle~0~color:black" />
+        <object name="\orange~2017-10-26_11:19:05" x="495" y="485" theta="3.14159" dimX="1.40504" dimY="1.89071" dimZ="4.59102" type="1" properties="name:\orange~2017-10-26_11:19:05~objectAngle~3.14159~color:black" />
+        <object name="\table~2017-10-26_11:19:05" x="499" y="487" theta="1.5708" dimX="18" dimY="18" dimZ="14.4" type="1" properties="name:\table~2017-10-26_11:19:05~objectAngle~1.5708~color:red" />
+        <object name="\bookcase~2017-10-26_11:19:05" x="548" y="495" theta="0" dimX="7.8" dimY="29.8" dimZ="15.9" type="1" properties="name:\bookcase~2017-10-26_11:19:05~objectAngle~0~color:green" />
+        <object name="\green~2017-10-26_11:19:05" x="499" y="485" theta="3.14159" dimX="1.14504" dimY="1.81071" dimZ="3.89102" type="1" properties="name:\green~2017-10-26_11:19:05~objectAngle~3.14159~color:black" />
+        <object name="\chair~2017-10-26_11:19:05" x="548" y="495" theta="3.14159" dimX="2.29789" dimY="4.7496" dimZ="4.67853" type="1" properties="name:\chair~2017-10-26_11:19:05~objectAngle~3.14159~color:magenta" />
+        <object name="\plant~2017-10-26_11:19:21" x="542" y="446" theta="0" dimX="36" dimY="18.2" dimZ="12.1" type="1" properties="name:\plant~2017-10-26_11:19:21~objectAngle~0~color:yellow" />
+        <object name="\couch~2017-10-26_11:19:30" x="439" y="474" theta="1.5708" dimX="31.9907" dimY="9.00516" dimZ="15.991" type="1" properties="name:\couch~2017-10-26_11:19:30~objectAngle~1.5708~color:cyan" />
+        <object name="\tomato~2017-10-26_11:19:30" x="435" y="482" theta="1.5708" dimX="1.52" dimY="0.94" dimZ="2.2" type="1" properties="name:\tomato~2017-10-26_11:19:30~objectAngle~1.5708~color:black" />
+        <object name="\milk~2017-10-26_11:19:31" x="440" y="469" theta="0" dimX="1.20001" dimY="1.9" dimZ="4" type="1" properties="name:\milk~2017-10-26_11:19:31~objectAngle~0~color:black" />
+        <object name="\plant~2017-10-26_11:19:31" x="431" y="472" theta="0" dimX="5.89616" dimY="5.93502" dimZ="4.8949" type="1" properties="name:\plant~2017-10-26_11:19:31~objectAngle~0~color:magenta" />
+        <object name="\spaghetti~2017-10-26_11:19:31" x="431" y="448" theta="0" dimX="0.64504" dimY="5.41071" dimZ="1.41102" type="1" properties="name:\spaghetti~2017-10-26_11:19:31~objectAngle~0~color:black" />
+        <object name="\plastic~2017-10-26_11:19:31" x="432" y="486" theta="0" dimX="0.86504" dimY="6.19071" dimZ="0.851024" type="1" properties="name:\plastic~2017-10-26_11:19:31~objectAngle~0~color:black" />
+        <object name="\salt~2017-10-26_11:19:31" x="439" y="480" theta="1.5708" dimX="1.22" dimY="0.92" dimZ="2.88" type="1" properties="name:\salt~2017-10-26_11:19:31~objectAngle~1.5708~color:black" />
+        <object name="\zwieback~2017-10-26_11:19:31" x="439" y="474" theta="1.5708" dimX="2.84" dimY="1.52" dimZ="2.88" type="1" properties="name:\zwieback~2017-10-26_11:19:31~objectAngle~1.5708~color:black" />
+        <object name="\corn~2017-10-26_11:19:31" x="437" y="470" theta="0" dimX="1.36504" dimY="3.83071" dimZ="5.79102" type="1" properties="name:\corn~2017-10-26_11:19:31~objectAngle~0~color:black" />
+        <object name="\kitekat~2017-10-26_11:19:31" x="431" y="466" theta="0" dimX="1.88504" dimY="2.77071" dimZ="3.89102" type="1" properties="name:\kitekat~2017-10-26_11:19:31~objectAngle~0~color:black" />
+        <object name="\tomato~2017-10-26_11:19:31" x="438" y="464" theta="1.5708" dimX="1.86" dimY="0.64" dimZ="2.52" type="1" properties="name:\tomato~2017-10-26_11:19:31~objectAngle~1.5708~color:black" />
+        <object name="\chair~2017-10-26_11:19:54" x="501" y="473" theta="0" dimX="7.2" dimY="9.91302" dimZ="19.9022" type="1" properties="name:\chair~2017-10-26_11:19:54~objectAngle~0~color:blue" />
+        <object name="\basmati~2017-10-26_11:19:54" x="508" y="489" theta="1.5708" dimX="0.58504" dimY="2.43071" dimZ="3.39102" type="1" properties="name:\basmati~2017-10-26_11:19:54~objectAngle~1.5708~color:black" />
+        <object name="\couch~2017-10-26_11:19:54" x="544" y="447" theta="0" dimX="36" dimY="18.2" dimZ="12.1" type="1" properties="name:\couch~2017-10-26_11:19:54~objectAngle~0~color:yellow" />
+        <object name="\orange~2017-10-26_11:19:54" x="497" y="483" theta="0" dimX="1.40504" dimY="1.89071" dimZ="4.59102" type="1" properties="name:\orange~2017-10-26_11:19:54~objectAngle~0~color:black" />
+        <object name="\table~2017-10-26_11:19:54" x="501" y="485" theta="1.5708" dimX="18" dimY="18" dimZ="14.4" type="1" properties="name:\table~2017-10-26_11:19:54~objectAngle~1.5708~color:red" />
+        <object name="\bookcase~2017-10-26_11:19:54" x="549" y="495" theta="0" dimX="7.8" dimY="29.8" dimZ="15.9" type="1" properties="name:\bookcase~2017-10-26_11:19:54~objectAngle~0~color:green" />
+        <object name="\green~2017-10-26_11:19:54" x="501" y="483" theta="0" dimX="1.14504" dimY="1.81071" dimZ="3.89102" type="1" properties="name:\green~2017-10-26_11:19:54~objectAngle~0~color:black" />
+        <object name="\chair~2017-10-26_11:19:54" x="500" y="497" theta="3.14159" dimX="7.2" dimY="9.91302" dimZ="19.9022" type="1" properties="name:\chair~2017-10-26_11:19:54~objectAngle~3.14159~color:blue" />
+        <object name="\plant~2017-10-26_11:19:54" x="549" y="495" theta="3.14159" dimX="2.29789" dimY="4.7496" dimZ="4.67853" type="1" properties="name:\plant~2017-10-26_11:19:54~objectAngle~3.14159~color:magenta" />
+    </objects>
+</semantic_map>

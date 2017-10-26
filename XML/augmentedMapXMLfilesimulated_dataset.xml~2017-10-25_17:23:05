@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<semantic_map>
+    <!--Semantic map saved XML file. Coords are already image coordinates.-->
+    <areas />
+    <imposed_areas>
+        <tag name="kitchen" x="51" y="55" />
+        <tag name="kitchen" x="52" y="51" />
+        <tag name="kitchen" x="52" y="54" />
+        <tag name="kitchen" x="52" y="52" />
+        <tag name="kitchen" x="52" y="53" />
+        <tag name="kitchen" x="51" y="48" />
+        <tag name="kitchen" x="51" y="50" />
+        <tag name="kitchen" x="51" y="51" />
+        <tag name="kitchen" x="51" y="53" />
+    </imposed_areas>
+    <objects>
+        <object name="\couch~2017-10-25_17:23:05" x="529" y="497" theta="0" dimX="7.8" dimY="29.8" dimZ="15.9" type="1" properties="name:\couch~2017-10-25_17:23:05~objectAngle~0~color:red" />
+        <object name="\bookcase~2017-10-25_17:23:05" x="529" y="497" theta="3.14159" dimX="2.29789" dimY="4.7496" dimZ="4.67853" type="1" properties="name:\bookcase~2017-10-25_17:23:05~objectAngle~3.14159~color:red" />
+    </objects>
+</semantic_map>

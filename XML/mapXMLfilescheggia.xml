@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<semantic_map>
+    <!--Semantic map saved XML file. Coords are already image coordinates.-->
+    <areas>
+        <tag name="kitchen" x="121" y="124" />
+        <tag name="living_room" x="243" y="124" />
+    </areas>
+    <objects>
+        <object name="" x="154" y="119" theta="0" dimX="30" dimY="30" dimZ="30" type="0" properties="" />
+        <object name="room_center" x="115" y="124" theta="1.5708" dimX="1" dimY="1" dimZ="1" type="1" properties="" />
+        <object name="room_center" x="243" y="124" theta="1.5708" dimX="1" dimY="1" dimZ="1" type="1" properties="" />
+    </objects>
+</semantic_map>

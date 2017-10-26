@@ -1,0 +1,7 @@
+uint32 width
+uint32 height
+float32[] cell_centers_x
+float32[] cell_centers_y
+string[] matrix
+---
+string aknowledgment

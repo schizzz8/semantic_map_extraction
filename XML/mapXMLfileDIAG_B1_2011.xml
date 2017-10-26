@@ -1,0 +1,49 @@
+<?xml version="1.0" ?>
+<semantic_map>
+    <!--Semantic map saved XML file. Coords are already image coordinates.-->
+    <areas>
+        <tag name="X" x="228" y="696" />
+        <tag name="Y" x="231" y="609" />
+        <tag name="Z" x="234" y="522" />
+        <tag name="K" x="226" y="426" />
+        <tag name="T" x="225" y="348" />
+        <tag name="corridor" x="382" y="784" />
+        <tag name="pirriOffice" x="186" y="787" />
+        <tag name="cis" x="271" y="895" />
+        <tag name="quaglia" x="450" y="910" />
+        <tag name="printerRoom" x="867" y="796" />
+        <tag name="phdRoom" x="798" y="855" />
+        <tag name="lavatory" x="837" y="678" />
+        <tag name="toilet" x="894" y="546" />
+        <tag name="secondaryCorridor" x="801" y="693" />
+    </areas>
+    <objects>
+        <object name="" x="277" y="825" theta="4.71239" dimX="30" dimY="30" dimZ="30" type="0" properties="" />
+        <object name="" x="445" y="825" theta="4.71239" dimX="30" dimY="30" dimZ="30" type="0" properties="" />
+        <object name="" x="801" y="823" theta="4.71239" dimX="30" dimY="30" dimZ="30" type="0" properties="" />
+        <object name="" x="888" y="616" theta="4.71239" dimX="30" dimY="30" dimZ="30" type="0" properties="" />
+        <object name="" x="798" y="754" theta="4.71239" dimX="30" dimY="30" dimZ="30" type="0" properties="" />
+        <object name="" x="822" y="811" theta="0" dimX="30" dimY="30" dimZ="30" type="0" properties="" />
+        <object name="" x="825" y="681" theta="0" dimX="30" dimY="30" dimZ="30" type="0" properties="" />
+        <object name="" x="247" y="787" theta="0" dimX="30" dimY="30" dimZ="30" type="0" properties="" />
+        <object name="" x="249" y="696" theta="0" dimX="30" dimY="30" dimZ="30" type="0" properties="" />
+        <object name="" x="250" y="606" theta="0" dimX="30" dimY="30" dimZ="30" type="0" properties="" />
+        <object name="" x="253" y="513" theta="0" dimX="30" dimY="30" dimZ="30" type="0" properties="" />
+        <object name="" x="256" y="433" theta="0" dimX="30" dimY="30" dimZ="30" type="0" properties="" />
+        <object name="" x="255" y="351" theta="0" dimX="30" dimY="30" dimZ="30" type="0" properties="" />
+        <object name="room_center" x="228" y="696" theta="1.5708" dimX="1" dimY="1" dimZ="1" type="1" properties="" />
+        <object name="room_center" x="231" y="609" theta="1.5708" dimX="1" dimY="1" dimZ="1" type="1" properties="" />
+        <object name="room_center" x="234" y="522" theta="1.5708" dimX="1" dimY="1" dimZ="1" type="1" properties="" />
+        <object name="room_center" x="226" y="426" theta="1.5708" dimX="1" dimY="1" dimZ="1" type="1" properties="" />
+        <object name="room_center" x="225" y="348" theta="1.5708" dimX="1" dimY="1" dimZ="1" type="1" properties="" />
+        <object name="room_center" x="282" y="784" theta="1.5708" dimX="1" dimY="1" dimZ="1" type="1" properties="" />
+        <object name="room_center" x="186" y="787" theta="1.5708" dimX="1" dimY="1" dimZ="1" type="1" properties="" />
+        <object name="room_center" x="271" y="895" theta="1.5708" dimX="1" dimY="1" dimZ="1" type="1" properties="" />
+        <object name="room_center" x="450" y="910" theta="1.5708" dimX="1" dimY="1" dimZ="1" type="1" properties="" />
+        <object name="room_center" x="859" y="790" theta="1.5708" dimX="1" dimY="1" dimZ="1" type="1" properties="" />
+        <object name="room_center" x="798" y="855" theta="1.5708" dimX="1" dimY="1" dimZ="1" type="1" properties="" />
+        <object name="room_center" x="837" y="678" theta="1.5708" dimX="1" dimY="1" dimZ="1" type="1" properties="" />
+        <object name="room_center" x="894" y="546" theta="1.5708" dimX="1" dimY="1" dimZ="1" type="1" properties="" />
+        <object name="room_center" x="801" y="693" theta="1.5708" dimX="1" dimY="1" dimZ="1" type="1" properties="" />
+    </objects>
+</semantic_map>

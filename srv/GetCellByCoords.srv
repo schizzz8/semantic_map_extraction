@@ -1,0 +1,5 @@
+float32 real_x
+float32 real_y
+---
+uint32 cell_x
+uint32 cell_y
