@@ -31,7 +31,7 @@ def is_forniture(string):
 
 def generate_kb(req, saving_path='./test.txt'):
     out_file = open(saving_path, 'w')
-    print('Saving in ' + saving_path)
+    #print('Saving in ' + saving_path)
     width = req.width
     height = req.height
     areas = dict()
@@ -138,7 +138,7 @@ def generate_kb(req, saving_path='./test.txt'):
     # os.system('sort test.txt >> SPQReL.txt')
 
     out_file.close()
-    print('Output generated.')
+    #print('Output generated.')
     return GenerateKBResponse('Done.')
 
 

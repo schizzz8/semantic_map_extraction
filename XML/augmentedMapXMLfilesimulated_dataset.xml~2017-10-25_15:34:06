@@ -1,9 +1,0 @@
-<?xml version="1.0" ?>
-<semantic_map>
-    <!--Semantic map saved XML file. Coords are already image coordinates.-->
-    <areas />
-    <imposed_areas />
-    <objects>
-        <object name="\bookcase~2017-10-25_15:34:06" x="469" y="457" theta="0" dimX="36" dimY="18.2" dimZ="12.1" type="1" properties="name:\bookcase~2017-10-25_15:34:06~objectAngle~0~color:red" />
-    </objects>
-</semantic_map>

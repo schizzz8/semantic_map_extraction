@@ -5,6 +5,7 @@ project(semantic_map_extraction)
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
+  std_msgs
   message_generation
   roscpp
   rospy
@@ -52,6 +53,7 @@ find_package(TINYXML REQUIRED)
 add_message_files(
   FILES
   Obs.msg
+  Object.msg
   )
 
 ## Generate services in the 'srv' folder

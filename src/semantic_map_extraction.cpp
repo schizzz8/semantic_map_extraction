@@ -148,16 +148,16 @@ void SemanticNode::callService() {
     msg.request.cell_centers_x = real_world_cell_centers_x;
     msg.request.cell_centers_y = real_world_cell_centers_y;
 
-    std::cout << "Matrix Width: " << this->horizontal_distances.size()
-              << ", height " << this->vertical_distances.size()
-              << ", total cells "
-              << this->horizontal_distances.size()*this->vertical_distances.size()
-              << std::endl;
+    //    std::cout << "Matrix Width: " << this->horizontal_distances.size()
+    //              << ", height " << this->vertical_distances.size()
+    //              << ", total cells "
+    //              << this->horizontal_distances.size()*this->vertical_distances.size()
+    //              << std::endl;
 
-    std::cout << "Image width: " << this->image.cols
-              << ", image height " << this->image.rows
-              << ", total pixels " << this->image.cols*this->image.rows
-              << std::endl;
+    //    std::cout << "Image width: " << this->image.cols
+    //              << ", image height " << this->image.rows
+    //              << ", total pixels " << this->image.cols*this->image.rows
+    //              << std::endl;
 
     msg.request.matrix = (this->semantic_matrix)->msg_format();
     std::vector<std::string> t = (this->semantic_matrix)->msg_format();
@@ -335,7 +335,7 @@ void SemanticNode::saveXMLMap(std::string XMLFilePath) {
         idx++;
     }
 
-    ROS_INFO("XML file succesfully produced: saving...");
+    //ROS_INFO("XML file succesfully produced: saving...");
     char buffer[80];
     std::time_t rawtime;
     std::time(&rawtime);
@@ -480,33 +480,36 @@ void SemanticNode::addElement() {
         ROS_INFO("...");
 
 
-	bool found = false;
+        bool found = false;
         for(std::vector<std::string>::iterator it = tags.begin();
             it != tags.end();
             ++it){
             std::string tag = *it;
 
-	    if(tag.find(this->buffer.name) != std::string::npos)
-	      found = true;
+            if(tag.find(this->buffer.name) != std::string::npos)
+                found = true;
         }
 
         if(found){
             ROS_INFO("Object %s already inserted in the semantic map",this->buffer.name.c_str());
         } else {
             (this->semantic_matrix)->setObjectTags(cell_obj, obj);
+            this->check_object_area(cell);
+            ROS_INFO("Object added.");
+
         }
     }
     catch(char const* str) {
         ROS_ERROR("%s", str);
     }
 
-    this->check_object_area(cell);
-    ROS_INFO("Object added.");
 
     if (this->buffer.ob_type == DOOR) {
         (this->room_map)->addDoors(std::make_pair(vert[0], vert[1]));
         ROS_INFO("Door added.");
     }
+
+    std::cerr << "\n\n";
 
     this->saveImages();
     this->callService();
@@ -583,6 +586,7 @@ void SemanticNode::mapSubscriber(const nav_msgs::OccupancyGrid::ConstPtr& map) {
 }
 
 void SemanticNode::ObservationTopicSubscriber(const semantic_map_extraction::Obs::ConstPtr& observation) {
+
     float object_x = (this->resolution != -1)
             ? (observation->posx - this->origin_x)/this->resolution
             : observation->posx;
@@ -601,21 +605,6 @@ void SemanticNode::ObservationTopicSubscriber(const semantic_map_extraction::Obs
     this->buffer.angle = observation->theta;
     this->buffer.size = cv::Vec3f(dim_x, dim_y, dim_z);
 
-    // DEBUG //
-    std::cerr << "Received POSX=" << observation->posx
-              << ", POSY=" << observation->posy
-              << ", THETA=" << observation->theta
-              << ", DIMS (X,Y,Z) = (" << observation->dimx
-              << ", " << observation->dimy << ", " << observation->dimz << ")" << std::endl;
-
-    std::cerr << "Converted image coords POSX=" << object_x
-              << ",POSY=" << object_y
-              << ", THETA=" << observation->theta
-              << ", DIMS (X,Y,Z) = (" << dim_x
-              << ", " << dim_y
-              << ", " << dim_z << ") " << std::endl;
-    std::cerr << "PARAMS = (" << observation->properties << ") " << std::endl;
-
     std::string properties = observation->properties;
     std::replace(properties.begin(), properties.end(), '#', '_');
     this->buffer.properties = properties;
@@ -630,6 +619,93 @@ void SemanticNode::ObservationTopicSubscriber(const semantic_map_extraction::Obs
         this->buffer.time = ros::Time::now();
         this->buffer.last_writer = "obs";
     }
+}
+
+void SemanticNode::ObjectTopicSubscriber(const semantic_map_extraction::Object_<std::allocator<void> >::ConstPtr &object){
+
+    std::cerr << "\n\n###################################################################################" << std::endl;
+    std::cerr << "Object received!!!" << std::endl;
+    std::cerr << "###################################################################################\n" << std::endl;
+
+    std::string tag = object->type;
+    size_t pos_start = tag.find("(\"");
+    size_t pos_end = tag.find("\")");
+
+    try {
+        if (pos_start == std::string::npos || pos_end == std::string::npos) {
+            throw "Tag not recognized from ASR";
+        }
+
+        this->buffer.name = tag.substr(pos_start + 2, pos_end - pos_start - 2);
+        std::replace(this->buffer.name.begin(), this->buffer.name.end(), ' ', '_');
+        this->buffer.ob_type =
+                (this->buffer.name.find("door") != std::string::npos ||
+                this->buffer.name.find("DOOR") != std::string::npos)
+                ? DOOR : NORMAL;
+
+        if (this->buffer.time != ros::Time(0)
+                && (ros::Time::now() - this->buffer.time).toSec()
+                < this->timeout && buffer.last_writer.compare("asr") != 0) {
+            this->addElement();
+            this->buffer.time = ros::Time(0);
+            this->buffer.last_writer = "asr";
+        } else {
+            this->buffer.time = ros::Time::now();
+            this->buffer.last_writer = "asr";
+        }
+    }
+    catch(char const* err) {
+        ROS_ERROR("%s", err);
+    }
+
+    float object_x = (this->resolution != -1)
+            ? (object->posx - this->origin_x)/this->resolution
+            : object->posx;
+    float object_y = (this->resolution != -1)
+            ? this->image.size().height
+              - (object->posy - this->origin_y)/this->resolution
+            : object->posy;
+    float dim_x = (this->resolution != -1)
+            ? object->dimx/this->resolution : object->dimx;
+    float dim_y = (this->resolution != -1)
+            ? object->dimy/this->resolution : object->dimy;
+    float dim_z = (this->resolution != -1)
+            ? object->dimz/this->resolution : object->dimz;
+
+    this->buffer.pt = cv::Point2i(object_x, object_y);
+    this->buffer.angle = object->theta;
+    this->buffer.size = cv::Vec3f(dim_x, dim_y, dim_z);
+
+    // DEBUG //
+    //    std::cerr << "Received POSX=" << object->posx
+    //              << ", POSY=" << object->posy
+    //              << ", THETA=" << object->theta
+    //              << ", DIMS (X,Y,Z) = (" << object->dimx
+    //              << ", " << object->dimy << ", " << object->dimz << ")" << std::endl;
+
+    //    std::cerr << "Converted image coords POSX=" << object_x
+    //              << ",POSY=" << object_y
+    //              << ", THETA=" << object->theta
+    //              << ", DIMS (X,Y,Z) = (" << dim_x
+    //              << ", " << dim_y
+    //              << ", " << dim_z << ") " << std::endl;
+    //    std::cerr << "PARAMS = (" << object->properties << ") " << std::endl;
+
+    std::string properties = object->properties;
+    std::replace(properties.begin(), properties.end(), '#', '_');
+    this->buffer.properties = properties;
+
+    if (this->buffer.time != ros::Time(0)
+            && (ros::Time::now() - this->buffer.time).toSec()
+            < this->timeout && buffer.last_writer.compare("obs") != 0) {
+        this->addElement();
+        this->buffer.time = ros::Time(0);
+        this->buffer.last_writer = "obs";
+    } else {
+        this->buffer.time = ros::Time::now();
+        this->buffer.last_writer = "obs";
+    }
+
 }
 
 void SemanticNode::ASRSubscriber(const std_msgs::String::ConstPtr& string) {
@@ -1041,8 +1117,10 @@ int main(int argc, char** argv) {
     n.param<int>("add_objects_timeout", timeout, 3000000);
     n.param<bool>("wait_prolog_service", wait_service, false);
     n.param<bool>("load_dynamic_map", load_dyn_map, false);
+
     ros::Subscriber sub_map;
     ros::Subscriber sub_obs;
+    ros::Subscriber sub_obj;
     ros::Subscriber sub_asr;
     ros::Subscriber sub_remove_object_by_name;
     ros::Subscriber sub_update_object_properties_by_name;
@@ -1112,6 +1190,8 @@ int main(int argc, char** argv) {
     sub_obs = n.subscribe<semantic_map_extraction::Obs>(
                 "/" + robotname + "/ObservationTopic",
                 1000, &SemanticNode::ObservationTopicSubscriber, sem_node);
+    sub_obj = n.subscribe<semantic_map_extraction::Object>("/" + robotname + "/ObjectTopic",
+                                                           1000, &SemanticNode::ObjectTopicSubscriber, sem_node);
     sub_asr = n.subscribe<std_msgs::String>(
                 "/" + robotname + "/ASR", 1000, &SemanticNode::ASRSubscriber, sem_node);
     sub_remove_object_by_name = n.subscribe<std_msgs::String>(

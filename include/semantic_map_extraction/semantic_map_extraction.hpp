@@ -23,6 +23,7 @@
 #include "std_msgs/String.h"
 #include "tf/transform_listener.h"
 #include "semantic_map_extraction/Obs.h"
+#include "semantic_map_extraction/Object.h"
 #include "semantic_map_extraction/GenerateKB.h"
 #include "semantic_map_extraction/GetCellByCoords.h"
 #include "semantic_map_extraction/GetCoordsByCell.h"
@@ -66,6 +67,7 @@ class SemanticNode {
   void mapSubscriber(const nav_msgs::OccupancyGrid::ConstPtr& map);
   void ObservationTopicSubscriber(
       const semantic_map_extraction::Obs::ConstPtr& observation);
+  void ObjectTopicSubscriber(const semantic_map_extraction::Object::ConstPtr& object);
   void ASRSubscriber(const std_msgs::String::ConstPtr& string);
   void RemoveObjectSubscriber(const std_msgs::String::ConstPtr& string);
   void UpdateObjectPropertySubscriber(const std_msgs::String::ConstPtr& s);
